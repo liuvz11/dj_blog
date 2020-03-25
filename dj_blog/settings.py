@@ -9,6 +9,12 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
+BLOG_CONFIG = {
+    "tag_max": 10,
+    "title_max": 30,
+    "body_max": 30000,
+    "comment_max": 300
+}
 
 import os
 
@@ -37,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "blog"
 ]
 
 MIDDLEWARE = [
